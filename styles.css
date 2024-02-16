@@ -1,0 +1,50 @@
+:root {
+  --header-background: #15304c;
+  --nav-text-link-color: white;
+  --background-image: url("images/background.webp");
+}
+/* =================== GENERAL =================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* =================== HEADER =================== */
+header {
+  display: flex;
+  align-items: center;
+  background-color: var(--header-background);
+  height: 70px;
+}
+.logo {
+  flex-grow: 1;
+}
+.logo img {
+  width: 200px;
+  margin-left: 20px;
+}
+/* =================== NAV =================== */
+nav {
+  margin-right: 30px;
+}
+nav li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+nav li a {
+  color: var(--nav-text-link-color);
+  text-decoration: none;
+}
+/* =================== NAV MENU =================== */
+.menu-icon {
+  display: none;
+  margin-right: 30px;
+}
+/* =================== WELCOME SECTION =================== */
+.welcome {
+  background-image: var(--background-image);
+  height: calc(100vh - 70px);
+  background-size: cover;
+  background-position: center;
+}
